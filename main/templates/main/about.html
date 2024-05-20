@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/aboutPage.css' %}">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <main>
+            <div class="content">
+                <div class="frame">
+                    <div class="photo">
+                        <img src="{% static '/img/Staff.png' %}" alt="..." class="rounded">
+                    </div>
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">Мы придём вам на помощь!</span>
+                            <span class="cardText">У нас Вы можете сфотографироваться на любые документы,
+                                распечатать все что угодно, огромный выбор фото-сувениров для дорогих и близких тебе людей.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">Наша миссия</span>
+                            <span class="cardText">Основная наша миссия – быть полезным каждому!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="{% static '/img/phoroMan.jpg' %}" alt="..." class="rounded">
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="photo">
+                        <img src="{% static '/img/paparasi.jpg' %}" alt="..." class="rounded">
+                    </div>
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">Профессионалы своего дела</span>
+                            <span class="cardText">У нас работаю настоящие профессионалы своего дела, поэтому вы получите максимально качественно оказанные услуги по приятным ценам!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

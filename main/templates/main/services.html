@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{%  static 'css/service.css' %}">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="sidenav_menu">
+
+
+        <div class="containerCards">
+            <div class="cards" id="coffe">
+                        {% for el in facility %}
+
+                    <div class="card" style="width: 14.79vw;">
+                        <img src="{{ el.photo.url}}" alt="{{ el.name }}" class="card-img-top">
+                        <div class="card-body">
+
+                            <p>{{ el.name }}</p>
+                            <span class="card-text">{{ el.price }} руб.</span>
+                        </div>
+                        <div class="cardDesc">
+                            <span class="desc">{{ el.desc }}</span>
+                        </div>
+                    </div>
+                        {% endfor %}
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+{% endblock %}
+{% block linkJS %}
+  <script src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

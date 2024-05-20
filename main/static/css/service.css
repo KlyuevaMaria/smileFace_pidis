@@ -1,0 +1,92 @@
+
+/* Body */
+/*body {*/
+/*    background: #F3F2EF;*/
+/*}*/
+/* Главная часть */
+/*.sidenav_menu {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    gap: 5vw;*/
+/*}*/
+
+/* Боковая навигация */
+/*.nav_menu {*/
+/*    margin-top: 8%;*/
+/*    width: 12vw;*/
+/*    height: 36vw;*/
+/*}*/
+
+/*.center {*/
+/*    align-items: center;*/
+/*}*/
+
+/* Карточки */
+.card {
+    --bs-card-bg: none;
+    --bs-card-border-color: none;
+    --bs-card-inner-border-radius: none;
+    align-items: center;
+}
+
+.card-body {
+    color: #000;
+    text-align: center;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+a p:hover{
+    color: #ECA852;
+    text-decoration: underline #ECA852;
+}
+.cardDesc {
+    display: none;
+    height: 15.9vw;
+    width: 25vw;
+    background: rgba(89, 90, 85, 0.74);
+    position: absolute;
+    padding: 15px;
+}
+
+.card-img-top {
+    width: 25vw;
+}
+
+.cardDesc span {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 1vw;
+}
+
+.card-text {
+    color: #000;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-body p {
+    width: 14.79vw;
+}
+
+.containerCards {
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5vw;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10vw;
+}
+
+
+
